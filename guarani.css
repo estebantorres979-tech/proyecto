@@ -1,0 +1,726 @@
+/*!
+ * SIU GuaranÃ­
+ * Este archivo css no debe editarse. Se genera automÃ¡ticamente utilizando un compilador para LESS.
+ */
+body {
+	background-color: #ffffff;
+	color: #333333;
+        font-size: 13px;
+}
+
+a {
+	color: #58b1d1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: #8d8d8d;
+}
+
+.resaltar {
+	color: #2093d1;
+}
+
+.divisor {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.titulo_operacion h2 {
+	color: #0088cc;
+	border-bottom: 1px solid #eeeeee;
+    padding-bottom: 2px;
+}
+
+.navbar .nav li.dropdown .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open .caret {
+	border-top-color: #666666;
+	border-bottom-color: #666666;
+}
+
+.navbar .brand {
+	color: #58b1d1;
+}
+
+.navbar .nav > li > a {
+	color: #666666;
+}
+
+.main-nav .nav > li > a {
+	border-right: 1px solid #e5e5e5;
+}
+
+.navbar .nav > li > a:hover {
+	color: #999999;
+}
+
+.navbar .nav > li.menu-item-seleccionado {
+	background-color: #0088cc;
+}
+
+.navbar .nav > li.menu-item-seleccionado > a {
+	color: #ffffff;
+}
+
+.navbar .nav > li.menu-item-seleccionado > a:hover {
+	color: #ffffff;
+}
+
+.dropdown.open .dropdown-toggle {
+	color: #000000;
+}
+
+.brand-nav {
+	background-color: #f7f7f7;
+}
+
+td.cc-titulo-nivel-0 {
+	background-color: #d5d5d5 !important;
+	color: #555555;
+}
+
+.alert {
+	color: #333333 !important;
+	text-align: center;
+}
+
+/* -- LOADING -- */
+#loading.small,
+#loading.big {
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 34px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+#kernel_contenido {
+	margin-top: 11px;
+}
+
+.tb-fix-ancho-fijo {
+	width: 940px !important;
+}
+
+.titulo_operacion form {
+	margin: 0;
+}
+
+.titulo_operacion button.js-btn-back {
+	margin-top: 5px;
+}
+
+.titulo_operacion button.js-history-back {
+	margin-top: 5px;
+}
+
+.well8 {
+	padding: 8px;
+}
+
+td.cc-titulo-nivel-0 {
+	font-weight: bold;
+}
+
+.notificaciones .badge {
+	position: relative;
+	top: -1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.btn {
+	margin-right: 5px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar .brand.logo-celular {
+	padding: 4px 20px;
+}
+
+.user-navbar,
+.user-navbar .nav,
+.carreras .control-group {
+	margin-bottom: 0px;
+}
+
+.link-in-data {
+	cursor: pointer;
+}
+
+.navbar-inner {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.navbar .nav > li > a {
+	text-shadow: none;
+}
+
+.main-nav .perfiles > li > a {
+	border-right: none;
+}
+
+.dropdown.open .dropdown-toggle {
+	cursor: pointer;
+}
+
+.brand-nav {
+	padding: 10px 0 15px;
+}
+
+/* -- CARRERAS -- */
+.carreras .control-label-carrera {
+	padding-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#label-select-carreras {
+    display: inline;
+}
+
+.js-select-carreras.selected {
+    font-weight: bold;
+}
+
+.js-select-carreras.pasivo, .control-label-carrera.pasivo {
+    color: #b94a48;
+}
+
+body > footer {
+	margin-top: 50px;
+}
+
+[class^="g3w-icono-"],
+[class*=" g3w-icono-"] {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 20px;
+	vertical-align: text-top;
+	background-image: url("../img/sprite.png");
+	background-position: 20px 20px;
+	background-repeat: no-repeat;
+	*margin-right: .3em;
+}
+
+[class^="g3w-icono-"]:last-child,
+[class*=" g3w-icono-"]:last-child {
+	*margin-left: 0;
+}
+
+.g3w-icono-inscripto {
+	background-position: 2px -3px;
+}
+
+.g3w-icono-fail {
+	background: url('../img/icono-info12x12.png') no-repeat;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.g3w-icono-pdf {
+	background-image: url('../img/iconos/g3w2-icon-pdf.png');
+	background-position: 0 0;
+}
+
+.g3w-icono-xls {
+	background-image: url('../img/iconos/g3w2-icon-excel.png');
+	background-position: 0 0;
+}
+
+.g3w-icono-csv {
+	background-image: url('../img/iconos/g3w2-icon-csv.html');
+	background-position: 0 0;
+}
+
+.pagination a {
+	padding: 0 9px;
+	line-height: 29px;
+}
+
+#loading_top {
+	position: fixed;
+	background-color: #FFF1A8;
+	top: 0px;
+	left: 640px;
+	display: block;
+	padding: 4px 8px;
+	border: 1px solid #FFE55C;
+	color: #777;
+	z-index: 10000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#loading {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+}
+
+#loading.small {
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/ajax-loader.gif);
+	background-repeat: no-repeat;
+}
+
+#loading.big {
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/loading.gif);
+	background-repeat: no-repeat;
+}
+
+#loading-dev-bar {
+	background-image: url(../img/ajax-loader.gif);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: none;
+	z-index: 10;
+}
+
+.notificaciones-centrar {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.msg_placeholder {
+	position: fixed;
+	top: 0px;
+	display: block;
+	padding: 4px 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	z-index: 10000;
+}
+
+.progress {
+	margin-bottom: 5px;
+}
+
+.progress .info-progress {
+	position: absolute;
+	font-weight: bold;
+	display: block;
+	margin-left: 5px;
+}
+
+.link-no-acceso {
+	color: #999999;
+	cursor: not-allowed;
+}
+
+.data-no-acceso {
+	color: #999999;
+	cursor: not-allowed
+}
+
+.borde-inferior {
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 8px;
+}
+
+.borde-superior {
+	border-top: 1px solid #EEEEEE;
+	padding-top: 8px;
+	width: 100%;
+}
+
+.titulo-datos-censales {
+	border-bottom: 0px;
+	margin: 0px;
+}
+
+.toggle-header {
+	cursor: pointer;
+	background-image: url('../img/colapsado.gif');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.toggle-div {
+	clear: both;
+}
+
+.label-obligatorio {
+	font-weight: bold;
+}
+
+.dc-faltante- {
+	background-color: #f2dede;
+	text-shadow: none;
+}
+
+.dc-faltante-active {
+	background-color: #FF2222;
+	color: white;
+	text-shadow: none;
+}
+
+.js-minimizar {
+	float: right;
+	margin-right: 0px;
+}
+
+form .g3-form-form {
+	background-color: #FBFBFB;
+	border: 1px solid #e3e3e3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	padding: 10px 19px 10px 19px;
+}
+
+form .encabezado-form {
+	padding: 5px 10px 5px 10px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+form .accordion-group {
+	background-color: #08c;
+	margin-bottom: 8px;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*/
+
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.065);
+}
+
+.accordion-cuerpo {
+	border-top: 1px solid #e3e3e3;
+}
+
+.g3-form-form.accordion-interno {
+	border: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.form-horizontal .control-label {
+	width: 110px;
+}
+
+.form-horizontal .controls {
+	margin-left: 120px;
+}
+
+.form-horizontal .g3-form-form {
+	padding: 20px 20px 0px 20px;
+}
+
+.g3-form select.timepicker {
+	width: 80px;
+}
+
+.g3-form table.form-ml input.todo_nada {
+	margin: 0px 10px 0px 0px;
+}
+
+.g3-form .input-append-btn {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	-moz-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+	float: right;
+}
+
+.g3-form .input-append-element {
+	display: block;
+	overflow: hidden;
+	padding-bottom: 1px;
+}
+
+.g3-form .input-append-element .js-autocomplete {
+	width: 100%;
+
+}
+
+.g3-form .date {
+	width: 164px;
+}
+
+.g3-form .input-append-btn {
+	margin-right: 0px;
+}
+
+.detalle-detalle {
+	padding: 10px;
+	margin: 0px;
+	background-color: #FFF;
+	clear: both;
+	border-top: 1px solid #e3e3e3;
+}
+
+.btn-group > .btn {
+	margin-right: 0px;
+}
+
+.herramientas-titulo {
+	padding: 3px 3px 0px 10px;
+}
+
+.detalle-contenedor {
+	padding: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.065);
+
+}
+
+.detalle-cabecera > h3,
+.detalle-cabecera > h4 {
+	color: #555;
+	margin-bottom: 3px;
+
+}
+
+.detalle-cabecera {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+
+table.detalle-tabla td:nth-child(2),
+table.detalle-tabla td:nth-child(4) {
+	text-align: left;
+	min-width: 200px;
+
+}
+
+table.detalle-tabla td:nth-child(1),
+table.detalle-tabla td:nth-child(3) {
+	text-align: right;
+	width: 120px;
+	font-weight: bold;
+}
+
+.herramientas-titulo{
+	font-size: 15px;
+	font-weight: bold;
+	color: #777;
+}
+
+.herramientas-acciones .btn-group > .btn{
+	margin-left: 5px;
+}
+
+.info-ficha-persona {
+	padding: 15px;
+	font-weight: bold;
+}
+
+.warning-icon {
+    background-image: url("../img/iconos/warning_icon.png");
+    background-repeat: no-repeat;
+}
+.error-icon {
+    background-image: url("../img/iconos/error_icon.png");
+    background-repeat: no-repeat;
+}
+.info-icon {
+    background-image: url("../img/iconos/info_icon.png");
+    background-repeat: no-repeat;
+}
+.success-icon {
+    background-image: url("../img/iconos/success_icon.png");
+    background-repeat: no-repeat;
+}
+.dc-mensaje {
+	padding-left: 70px;
+	font-weight: bold;
+}
+.dc-mensaje-ok {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.dc-mensaje-error {
+
+}
+.centrado {
+	text-align: center;
+}
+
+.submenu-mobile{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.submenu-mobile li a{
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.nav-header.mobile{
+    padding: 9px 15px !important;
+    margin-top: 10px !important;
+    font-weight: bold !important;
+    color: #555555 !important;
+    background-color: #e5e5e5 !important;
+    text-align: center !important;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.menu-item-curso .popover{
+    color: #666666 !important;
+    font-size: 13px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    line-height: 20px !important;
+    width: 150px !important;
+    text-align: center !important;
+}
+
+#back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 9999;
+	display: none;
+}
+
+/*
+ * https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+ */
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    table{
+        display:block;
+        overflow-x: scroll;
+    }
+    #renglones select{
+        width: auto;
+    }
+    #renglones input[type=text]{
+        font-size:1em;
+    }
+    .info-alumno{
+        min-width: 150px;
+    }
+    #renglones .col-fecha{
+        min-width: 80px;
+    }
+    #renglones .col-nota_cursada{
+        min-width: 100px;
+    }
+    #renglones .col-resultado{
+        min-width: 100px;
+    }
+    #renglones .col-condicion{
+        min-width: 80px;
+    }
+    #renglones .col-nota{
+        min-width: 60px;
+    }
+    .detalle-tabla{
+        width: auto;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: auto !important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .js-recuadro_actividad table{
+        display:table;
+    }
+   
+    .js-recuadro_actividad th:nth-child(4){
+        display:none;
+    }
+
+    .js-recuadro_actividad td:nth-child(4){
+        display:none;
+    }
+
+    .js-recuadro_actividad th:nth-child(6){
+        display:none;
+    }
+
+    .js-recuadro_actividad td:nth-child(6){
+        display:none;
+    }
+
+    /* Oculto el menú Derechos para Desktop y Tablet */ 
+    li.dropdown#derechos{
+        display: none;
+    }
+    
+    /* Oculto el menú Derechos para Celular */ 
+    li.dropdown-toggle#derechos{
+        display: none;
+    }
+}
+
+.form-control{
+    width: auto;
+}

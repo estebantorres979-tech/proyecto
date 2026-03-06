@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.navbar .nav > li {
+    float: left;
+}
+
+.navbar .nav > li > a {
+    padding: 10px 15px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+
+<title>SIU Guaraní - Validador de Certificados</title>
+
+        <link type='text/css' href='css/bootstrap.css' rel='stylesheet' />
+	<link type='text/css' href='/css/bootstrap-responsive.css' rel='stylesheet' />
+	<link type='text/css' href='css/guarani.css' rel='stylesheet' />
+	<link type='text/css' href='/css/facebox.css' rel='stylesheet' />
+	<link type='text/css' href='/css/jquery-ui.css' rel='stylesheet' />
+	<link type='text/css' href='/css/font-awesome-4.6.3/css/font-awesome.min.css' rel='stylesheet' />
+</head>
+
+<body>
+<div class="brand-nav">
+    <div class="container">
+		<div class="row-fluid">
+			<div class="span3">
+				<a class="brand" href="acceso.html">
+    <img src="img/logo-transparente.png" />
+</a>
+			</div>
+			<div class="span9">
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="navbar main-nav">
+	<div class="navbar-inner">
+		<div class="container">
+			<div role="navigation">
+				<ul class="nav nav-pills">
+    <li>
+        <a href="https://g3autogestion.uner.edu.ar/g3w3/acceso/login?ref=http://g3autogestion.uner.edu.ar/g3w3/solicitudes" target="_blank">
+            Acceso
+        </a>
+    </li>
+
+    <li>
+        <a href="https://g3autogestion.uner.edu.ar/g3w3/fecha_examen" target="_blank">
+            Fechas de Examen
+        </a>
+    </li>
+
+    <li>
+        <a href="https://g3autogestion.uner.edu.ar/g3w3/horarios_cursadas" target="_blank">
+            Horarios de Cursadas
+        </a>
+    </li>
+
+    <li class="active">
+        <a href="index.html">
+            Validador de Certificados
+        </a>
+    </li>
+
+    <li>
+        <a href="https://g3autogestion.uner.edu.ar/g3w3/ayuda_menu" target="_blank">
+            Ayuda
+        </a>
+    </li>
+</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id='kernel_contenido' class="container">
+	<div class='titulo_operacion row-fluid'>
+		<div class="span12">
+			<h2>Validador de Certificados</h2>
+		</div>
+	</div>
+
+	<div id='layout_una_columna' class="row-fluid">
+		<div id='columna_1' class="span12">
+			<div id='validador'>
+				<div class="accordion-group" style="background-color: #08c; margin-bottom: 8px; border: 1px solid #d4d4d4; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.065);">
+					<div class="encabezado-form" style="padding: 5px 10px; color: #FFF; font-weight: bold;">
+						Validador de Certificados
+					</div>
+					<div class="accordion-cuerpo" style="border-top: 1px solid #e3e3e3;">
+						<div class="g3-form-form" style="background-color: #FBFBFB; padding: 20px 19px 10px 19px;">
+							<div class="alert alert-info">
+								Ingrese su <strong>Número de Documento</strong>, y luego el <strong>Código de Validación</strong> impreso en el certificado.
+							</div>
+							<form method="post" action="#" id="guarani_form_validar" class="form-horizontal">
+								<div id="control_group_documento" class="control-group">
+									<label class="control-label" for="documento">Número de Documento</label>
+									<div class="controls">
+										<input id="documento" name="documento" type="text" value="" />
+									</div>
+								</div>
+								<div id="control_group_codigo_valid" class="control-group">
+									<label class="control-label" for="codigo_valid">Código de Validación</label>
+									<div class="controls">
+										<input id="codigo_valid" name="codigo_valid" type="text" value="" maxlength="14" />
+									</div>
+								</div>
+								<div class="control-group">
+									<div class="controls">
+										<input id="validar" name="validar" type="button" value="Validar" class="btn btn-info" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+    <div class='container'>
+		<div class="row">
+		    <div class="span6">
+				<div id='copyleft'></div>
+		    </div>
+		    <div class="span6">
+				<div id='copyright'></div>
+		    </div>
+		</div>
+    </div>
+</footer>
+
+<a id="back-to-top" href="#" class="btn btn-inverse btn-large" role="button" title="Ir arriba">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    document.getElementById("validar").addEventListener("click", function() {
+
+        var dni = document.getElementById("documento").value.trim();
+        var codigo = document.getElementById("codigo_valid").value.trim();
+
+        if (dni === "40806386" && codigo === "26030411380114") {
+
+            document.getElementById("kernel_contenido").innerHTML = `
+                <div class="titulo_operacion row-fluid">
+                    <div class="span12">
+                        <h2>Validador de Certificados</h2>
+                    </div>
+                </div>
+
+                <div class="well" style="background:#f5f5f5; padding:40px; border-radius:8px;">
+
+                    <div style="text-align:center;">
+                        <h1 style="font-size:55px; color:#333; margin-bottom:20px;">
+                            Certificado Válido
+                        </h1>
+
+                        <div class="alert alert-success" style="font-size:18px;">
+                            El certificado es válido y está vigente
+                        </div>
+                    </div>
+
+                    <div class="row-fluid" style="margin-top:30px;">
+                        <div class="span6" style="text-align:left;">
+                            <a href="index.html" class="btn btn-primary">
+                                Volver
+                            </a>
+                        </div>
+
+                        <div class="span6" style="text-align:right;">
+                            <a href="materias_aprobadas_ciencia_politica_ultimo.pdf" 
+                               download 
+                               class="btn btn-primary">
+                                <i class="fa fa-print"></i> Imprimir
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            `;
+
+        } else {
+
+            document.getElementById("kernel_contenido").innerHTML = `
+                <div class="titulo_operacion row-fluid">
+                    <div class="span12">
+                        <h2>Validador de Certificados</h2>
+                    </div>
+                </div>
+
+                <div class="well" style="background:#f5f5f5; padding:40px; border-radius:8px;">
+
+                    <div style="text-align:center;">
+                        <h1 style="font-size:55px; color:#333; margin-bottom:20px;">
+                            Certificado inválido
+                        </h1>
+
+                        <div class="alert alert-error" style="font-size:18px;">
+                            Certificado inválido, verifique que su certificado no haya expirado y que tanto el código de validación y el documento sean correctos.
+                        </div>
+                    </div>
+
+                    <div class="row-fluid" style="margin-top:30px;">
+                        <div class="span12" style="text-align:left;">
+                            <a href="index.html" class="btn btn-primary">
+                                Volver
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            `;
+        }
+
+    });
+
+});
+</script>
+
+</body>
+</html>
